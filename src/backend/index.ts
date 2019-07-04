@@ -40,8 +40,7 @@ const config = (() => {
   c.manifest = manifest;
   c.friends.hops = 2;
   c.caps = {
-    shs: 'm01Nh0ZvAvjbY1ziZEHMXawbCEIM6qwjCDmf0ResT/s=',   // << this thing
-    sign: null
+    shs: Buffer.from('m01Nh0ZvAvjbY1ziZEHMXawbCEIM6qwjCDmf0ResT/s=', 'base64'),   // << this thing
   }
 
   c.connections = {

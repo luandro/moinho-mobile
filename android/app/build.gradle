@@ -109,7 +109,7 @@ android {
     defaultConfig {
         versionCode 58
         versionName "0.1905.10-beta"
-        applicationId "se.manyver"
+        applicationId "digital.moinho"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         missingDimensionStrategy "RNN.reactNativeVersion", "reactNative57_5"
