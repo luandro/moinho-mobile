@@ -89,7 +89,7 @@ function view(state$: Stream<State>) {
         h(Button, {
           sel: 'composePublishButton',
           style: state.enabled ? styles.buttonEnabled : styles.buttonDisabled,
-          text: 'Publish',
+          text: 'Publicar',
           strong: state.enabled,
           accessible: true,
           accessibilityLabel: 'Compose Publish Button',

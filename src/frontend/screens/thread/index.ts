@@ -54,7 +54,7 @@ export const navOptions = {
     drawBehind: false,
     height: Dimensions.toolbarAndroidHeight,
     title: {
-      text: 'Thread',
+      text: 'Postagem',
     },
     backButton: {
       icon: require('../../../../images/icon-arrow-left.png'),

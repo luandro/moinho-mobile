@@ -36,7 +36,7 @@ export const navOptions = {
     drawBehind: false,
     height: Dimensions.toolbarAndroidHeight,
     title: {
-      text: 'Raw message',
+      text: 'Mensagem crua',
     },
     backButton: {
       icon: require('../../../../images/icon-arrow-left.png'),

@@ -23,13 +23,13 @@ export default function floatingAction(state$: Stream<State>): Stream<Props> {
           color: Palette.backgroundCTA,
           name: 'invite-create',
           icon: require('../../../../../images/share.png'),
-          text: 'Create invite',
+          text: 'Criar convite',
         },
         {
           color: Palette.backgroundCTA,
           name: 'invite-paste',
           icon: require('../../../../../images/package-down.png'),
-          text: 'Paste invite',
+          text: 'Colar convite',
         },
       );
     }
@@ -39,7 +39,7 @@ export default function floatingAction(state$: Stream<State>): Stream<Props> {
         color: Palette.backgroundCTA,
         name: 'bluetooth-search',
         icon: require('../../../../../images/bluetooth.png'),
-        text: 'Bluetooth seek',
+        text: 'buscar com Bluetooth',
       });
     }
 

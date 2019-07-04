@@ -106,7 +106,7 @@ export default function view(
           isSelfProfile
             ? h(Button, {
                 sel: 'editProfile',
-                text: 'Edit profile',
+                text: 'Editar perfil',
                 accessible: true,
                 accessibilityLabel: 'Edit Profile Button',
               })
@@ -178,7 +178,7 @@ export default function view(
                 color: Palette.backgroundCTA,
                 name: 'compose',
                 icon: require('../../../../images/pencil.png'),
-                text: 'Write a public message',
+                text: 'Escrever uma mensagem pública',
               },
             ],
             overrideWithAction: true,

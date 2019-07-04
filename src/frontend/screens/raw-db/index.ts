@@ -37,7 +37,7 @@ export const navOptions = {
     drawBehind: false,
     height: Dimensions.toolbarAndroidHeight,
     title: {
-      text: 'Raw database',
+      text: 'Banco de dados',
     },
     backButton: {
       icon: require('../../../../images/icon-arrow-left.png'),

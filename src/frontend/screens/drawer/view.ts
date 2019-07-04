@@ -24,7 +24,7 @@ function renderName(name?: string) {
       numberOfLines: 1,
       ellipsizeMode: 'middle',
     },
-    name || 'No name',
+    name || 'Sem nome',
   );
 }
 
@@ -82,35 +82,35 @@ export default function view(state$: Stream<State>): Stream<ReactElement<any>> {
         h(MenuItem, {
           sel: 'self-profile',
           icon: 'account-circle',
-          text: 'My profile',
+          text: 'Meu perfil',
           accessible: true,
           accessibilityLabel: 'My Profile Menu Item',
         }),
         h(MenuItem, {
           sel: 'bug-report',
           icon: 'email',
-          text: 'Email bug report',
+          text: 'Enviar email com bug',
           accessible: true,
-          accessibilityLabel: 'Email Bug Report',
+          accessibilityLabel: 'Enviar email com bug',
         }),
         h(MenuItem, {
           sel: 'raw-db',
           icon: 'database',
-          text: 'Raw database',
+          text: 'Banco de dados',
           accessible: true,
-          accessibilityLabel: 'Show Raw Database',
+          accessibilityLabel: 'Mostrar banco de dados',
         }),
         h(MenuItem, {
           sel: 'thanks',
           icon: 'heart-circle',
-          text: 'Thanks',
+          text: 'Grato',
           accessible: true,
           accessibilityLabel: 'Show Thanks',
         }),
         h(MenuItem, {
           sel: 'about',
           icon: 'information',
-          text: 'About',
+          text: 'Sobre',
           accessible: true,
           accessibilityLabel: 'About This App',
         }),

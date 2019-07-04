@@ -111,7 +111,7 @@ class InitialLoading extends PureComponent<any, any> {
       h(
         Animated.Text,
         {selectable: true, style: [styles.initialLoading, {opacity: fadeAnim}]},
-        'Building database indexes...\nThis may take up to several minutes',
+        'Construíndo os índices do banco de dados...\nIsso pode demorar alguns minutos.',
       ),
     ]);
   }

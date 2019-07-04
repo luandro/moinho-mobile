@@ -35,9 +35,9 @@ export default function intent(
     .filter(state => state.postText.length > 0)
     .map(() =>
       dialogSource.alert('', 'Save draft?', {
-        positiveText: 'Save',
+        positiveText: 'Salvar',
         positiveColor: Palette.text,
-        negativeText: 'Delete',
+        negativeText: 'Deletar',
         negativeColor: Palette.textNegative,
       }),
     )

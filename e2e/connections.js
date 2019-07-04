@@ -20,7 +20,7 @@ module.exports = function(driver, t) {
     );
     t.ok(
       await driver.elementByAndroidUIAutomator(
-        'new UiSelector().textContains("No connections")',
+        'new UiSelector().textContains("Sem conexões")',
       ),
       'I see Connections tab body with no connections',
     );
@@ -135,7 +135,7 @@ module.exports = function(driver, t) {
 
     t.ok(
       await driver.waitForElementByAndroidUIAutomator(
-        'new UiSelector().textContains("No connections")',
+        'new UiSelector().textContains("Sem conexões")',
         6000,
       ),
       'I see Connections tab body with no connections',

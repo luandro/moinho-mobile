@@ -46,7 +46,7 @@ module.exports = function(driver, t) {
     try {
       t.ok(
         await driver.elementByAndroidUIAutomator(
-          'new UiSelector().textContains("No connections")',
+          'new UiSelector().textContains("Sem conexões")',
         ),
         'I see Connections tab body with no connections',
       );

@@ -118,7 +118,7 @@ function ConnectivityModes(state: State) {
       sel: 'bluetooth-mode',
       active: state.bluetoothEnabled,
       icon: 'bluetooth',
-      label: 'Bluetooth Mode',
+      label: 'Modo Bluetooth',
       lastScanned: state.bluetoothLastScanned,
     }),
 
@@ -126,7 +126,7 @@ function ConnectivityModes(state: State) {
       sel: 'lan-mode',
       active: state.lanEnabled,
       icon: 'wifi',
-      label: 'Local Network Mode',
+      label: 'Modo Rede Local',
       lastScanned: 0,
     }),
 
@@ -134,7 +134,7 @@ function ConnectivityModes(state: State) {
       sel: 'dht-mode',
       active: state.internetEnabled,
       icon: 'account-network',
-      label: 'Internet P2P Mode',
+      label: 'Modo Internet P2P',
       lastScanned: 0,
     }),
 
@@ -142,7 +142,7 @@ function ConnectivityModes(state: State) {
       sel: 'pub-mode',
       active: state.internetEnabled,
       icon: 'server-network',
-      label: 'Internet Servers Mode',
+      label: 'Modo Servidores da Internet',
       lastScanned: 0,
     }),
   ]);
@@ -162,7 +162,7 @@ function Body(state: State) {
       image: require('../../../../../images/noun-lantern.png'),
       title: 'Offline',
       description:
-        'Turn on some connection mode\nor just enjoy some existing content',
+        'Ligue algum modo de conexão\nou aprecie o conteúdo existente',
     });
   }
 
@@ -171,17 +171,17 @@ function Body(state: State) {
       return h(EmptySection, {
         style: styles.emptySection,
         image: require('../../../../../images/noun-crops.png'),
-        title: 'Connecting',
+        title: 'Conectando',
         description:
-          'Standby while the app is\nattempting to connect to your peers',
+          'Aguarde enquanto o aplicativo\nestá tentando conectar',
       });
     } else {
       return h(EmptySection, {
         style: styles.emptySection,
         image: require('../../../../../images/noun-crops.png'),
-        title: 'No connections',
+        title: 'Sem conexões',
         description:
-          'Invite a friend to connect with\nor sync with people nearby',
+          'Convide um amigo para se conectar\nou sincronize com pessoas por perto',
       });
     }
   }
@@ -242,7 +242,7 @@ function SlideInMenu(state: State) {
           value: 'info',
           ['children' as any]: h(MenuOptionContent, {
             icon: 'information',
-            text: 'About',
+            text: 'Sobre',
             accessibilityLabel: 'About this Invite Code',
           }),
         }),
@@ -250,7 +250,7 @@ function SlideInMenu(state: State) {
           value: 'note',
           ['children' as any]: h(MenuOptionContent, {
             icon: 'pencil',
-            text: 'Add note',
+            text: 'Adicionar nota',
             accessibilityLabel: 'Add Note',
           }),
         }),
@@ -258,7 +258,7 @@ function SlideInMenu(state: State) {
           value: 'share',
           ['children' as any]: h(MenuOptionContent, {
             icon: 'share',
-            text: 'Share',
+            text: 'compartilhar',
             accessibilityLabel: 'Share Invite Code',
           }),
         }),
@@ -266,7 +266,7 @@ function SlideInMenu(state: State) {
           value: 'delete',
           ['children' as any]: h(MenuOptionContent, {
             icon: 'delete',
-            text: 'Delete',
+            text: 'Deletar',
             accessibilityLabel: 'Delete Invite Code',
           }),
         }),

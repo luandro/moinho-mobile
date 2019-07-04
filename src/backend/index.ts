@@ -23,7 +23,7 @@ import votesPlugin = require('./plugins/votes');
 import manifest = require('./manifest');
 
 const appDataDir = rnBridge.app.datadir();
-const ssbPath = path.resolve(appDataDir, '.ssb');
+const ssbPath = path.resolve(appDataDir, '.moinho');
 if (!fs.existsSync(ssbPath)) {
   mkdirp.sync(ssbPath);
 }
@@ -40,7 +40,7 @@ const config = (() => {
   c.manifest = manifest;
   c.friends.hops = 2;
   c.caps = {
-    shs: Buffer.from('m01Nh0ZvAvjbY1ziZEHMXawbCEIM6qwjCDmf0ResT/s=', 'base64'),   // << this thing
+    shs: 'm01Nh0ZvAvjbY1ziZEHMXawbCEIM6qwjCDmf0ResT/s=',   // << this thing
   }
 
   c.connections = {
