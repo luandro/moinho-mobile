@@ -258,7 +258,7 @@ function SlideInMenu(state: State) {
           value: 'share',
           ['children' as any]: h(MenuOptionContent, {
             icon: 'share',
-            text: 'compartilhar',
+            text: 'Compartilhar',
             accessibilityLabel: 'Share Invite Code',
           }),
         }),
